@@ -33,7 +33,7 @@ const SortingVisualizer: React.FC = () => {
   };
 
   const onChangeArrayBarRangeSlider = (
-    e: Event | React.SyntheticEvent,
+    _e: Event | React.SyntheticEvent,
     value: number | number[]
   ) => {
     if (typeof value === "number") {
@@ -42,7 +42,7 @@ const SortingVisualizer: React.FC = () => {
   };
 
   const onChangeAnimationSpeedRangeSlider = (
-    e: Event | React.SyntheticEvent,
+    _e: Event | React.SyntheticEvent,
     value: number | number[]
   ) => {
     if (typeof value === "number") {
