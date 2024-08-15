@@ -1,0 +1,37 @@
+#range-slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-inline: 3%;
+  margin-block: 15px;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.column {
+  width: 100%;
+}
+
+.range-slider-container {
+  padding-block: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)
+  );
+  opacity: 0.8;
+}
+
+.range-slider-container p {
+  text-align: center;
+}
+
+.range-slider-container:hover {
+  opacity: 1;
+}

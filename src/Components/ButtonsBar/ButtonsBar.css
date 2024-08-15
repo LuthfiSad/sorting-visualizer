@@ -1,0 +1,81 @@
+.buttons-bar {
+  /* height: 10%; */
+  margin-inline: 3%;
+  margin-block: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: stretch;
+}
+
+button {
+  padding-block: 5px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: medium;
+  color: white;
+  background-color: darkslategray;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+@media only screen and (max-width: 510px) {
+  button {
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  button {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  button {
+    font-size: xx-small;
+  }
+}
+
+button:hover {
+  font-style: bold;
+  cursor: pointer;
+}
+
+.buttonStyle1:hover {
+  border-color: green;
+  color: green;
+}
+
+.buttonStyle2:hover {
+  border-color: blue;
+  color: blue;
+}
+
+.buttonStyle3:hover {
+  border-color: peru;
+  color: peru;
+}
+
+#reset {
+  opacity: 0.6;
+  background-color: red;
+}
+#reset:hover {
+  opacity: 0.9;
+}
+
+button:disabled,
+.buttonStyle1:disabled,
+.buttonStyle2:disabled,
+.buttonStyle3:disabled,
+#reset:disabled {
+  background-color: grey;
+  color: white;
+  border-width: 0vw;
+  opacity: 1;
+  cursor: not-allowed;
+}
